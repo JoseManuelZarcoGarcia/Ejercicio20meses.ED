@@ -10,8 +10,11 @@ public class Inicio {
 		
 		mes = pedriNum(ct, texto1);
 		
-		for(int i = 1; i<(mes+1); i++) {
+		for(int i = 1; i<(mes+1); ++i) {
 			
+			if(i == 1)
+				System.out.println("");
+			else
 			aux = aux * 2;
 			
 			
@@ -31,5 +34,6 @@ public class Inicio {
 		respuesta=ct.nextInt();
 		return respuesta;
 	}
+	
 
 }
